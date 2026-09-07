@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título y Metadatos de la Web -->
+  <title>Senderismo 10K+ Morán - Lara | Rutas, Fotos y Videos de Montaña</title>
+  <meta name="description" content="Página oficial de la comunidad de Senderismo 10K+ Morán - Lara. Fotos, videos de excursiones, próximas salidas y conexión directa a nuestro grupo de WhatsApp.">
+  <meta name="keywords" content="Senderismo, Morán, Lara, El Tocuyo, Humocaro, Dinira, Trekking, Montañismo, 10K+, Venezuela">
+  <meta name="author" content="Senderismo 10K+ Morán - Lara">
+
+  <!-- OpenGraph para WhatsApp y Redes Sociales (Vista previa con imagen al compartir enlace) -->
+  <meta property="og:title" content="Senderismo 10K+ Morán - Lara | Rutas y Galería de Montaña">
+  <meta property="og:description" content="Únete a nuestro grupo de WhatsApp de senderismo en Morán, Lara. Explora nuestras fotos, videos y próximas salidas.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon e Iconos -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Iconos de FontAwesome 6 (CDN Oficial) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       BARRA DE NAVEGACIÓN (NAVBAR)
+       =================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#inicio" class="nav-brand">
+        <img src="assets/logo.png" alt="Logo Senderismo 10K+ Morán - Lara" class="nav-logo">
+        <div class="nav-title">
+          <span class="brand-name">Senderismo 10K+</span>
+          <span>Morán - Lara</span>
+        </div>
+      </a>
+
+      <!-- Menú de Enlaces de Escritorio y Móvil -->
+      <ul class="nav-links" id="nav-links-container">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proximas">Próximas Salidas</a></li>
+        <li><a href="#galeria">Fotos y Videos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#redes">Redes Sociales</a></li>
+      </ul>
+
+      <!-- Acciones de Cabecera -->
+      <div class="nav-actions">
+        <!-- Botón para el Asistente de Publicaciones -->
+        <button id="open-creator-btn" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.88rem;" title="Agregar nueva foto, video o ruta">
+          <i class="fa-solid fa-plus"></i> Publicar
+        </button>
+
+        <!-- Botón directo de WhatsApp -->
+        <a href="#" class="btn btn-whatsapp whatsapp-link" style="padding: 8px 18px; font-size: 0.9rem;">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir Menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================================================================
+       HERO / PORTADA PRINCIPAL
+       =================================================================== -->
+  <header class="hero" id="inicio">
+    <div class="container hero-content">
+      <img src="assets/logo.png" alt="Emblema Senderismo 10K+ Morán - Lara" class="hero-badge-logo">
+      <span class="hero-tag"><i class="fa-solid fa-mountain"></i> Municipio Morán • Estado Lara</span>
+      <h1 class="hero-title">Senderismo <span class="highlight">10K+</span> Morán</h1>
+      <p class="hero-subtitle group-slogan">Pasión por la montaña, senderos que unen caminos y superan límites.</p>
+      
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-whatsapp whatsapp-link" style="font-size: 1.05rem; padding: 14px 28px;">
+          <i class="fa-brands fa-whatsapp fa-lg"></i> Unirme al Grupo de WhatsApp
+        </a>
+        <a href="#galeria" class="btn btn-outline" style="font-size: 1.05rem; padding: 14px 28px;">
+          <i class="fa-solid fa-photo-film"></i> Ver Fotos y Videos
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       BARRA DE ESTADÍSTICAS DEL GRUPO
+       =================================================================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid" id="stats-container">
+        <!-- Rellenado dinámicamente desde config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PRÓXIMAS SALIDAS PROGRAMADAS
+       =================================================================== -->
+  <section class="upcoming-section" id="proximas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> Calendario</span>
+        <h2 class="section-title">Próxima Salida Oficial</h2>
+        <p class="section-desc">Entérate de nuestra siguiente caminata programada y confirma tu participación directamente en WhatsApp.</p>
+      </div>
+
+      <div id="upcoming-container">
+        <!-- Renderizado dinámicamente desde content.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       GALERÍA MULTIMEDIA (FOTOS, VIDEOS Y RUTAS)
+       =================================================================== -->
+  <section class="gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> Galería Multimedia</span>
+        <h2 class="section-title">Nuestras Rutas y Aventuras</h2>
+        <p class="section-desc">Explora las fotos y videos capturados en las cumbres, cascadas y senderos de Morán y Lara.</p>
+      </div>
+
+      <!-- Filtros de Contenido -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-border-all"></i> Todas
+        </button>
+        <button class="filter-btn" data-filter="fotos">
+          <i class="fa-solid fa-images"></i> Fotos
+        </button>
+        <button class="filter-btn" data-filter="videos">
+          <i class="fa-solid fa-video"></i> Videos
+        </button>
+        <button class="filter-btn" data-filter="rutas">
+          <i class="fa-solid fa-map-location-dot"></i> Rutas 10K+
+        </button>
+      </div>
+
+      <!-- Cuadrícula de Tarjetas de Publicaciones -->
+      <div class="posts-grid" id="posts-grid">
+        <!-- Renderizado dinámicamente desde content.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECCIÓN SOBRE NOSOTROS / MORÁN - LARA
+       =================================================================== -->
+  <section class="about-section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=800&q=80" alt="Senderistas en Morán Lara" class="about-main-img">
+          <div class="about-badge-overlay">
+            <img src="assets/logo.png" alt="Logo 10K+">
+            <div class="about-badge-text">
+              <h4>Senderismo 10K+</h4>
+              <p>Nadie se queda atrás</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag"><i class="fa-solid fa-users"></i> Nuestra Comunidad</span>
+          <h2>Amor por las Montañas de Morán</h2>
+          <p class="group-description">Somos una comunidad activa de senderismo nacida en el Municipio Morán, Estado Lara. Organizamos salidas constantes de más de 10 kilómetros por senderos naturales, cascadas y parajes montañosos, promoviendo el deporte, el ecoturismo y la solidaridad.</p>
+          <p>En nuestro logo llevamos grabado el valor del compañerismo: apoyarse mutuamente en cada ascenso empinado para que todos alcancemos la cima juntos.</p>
+
+          <!-- Consejos / Recomendaciones -->
+          <div class="tips-grid" id="hiking-tips-grid">
+            <!-- Rellenado dinámicamente desde config.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECCIÓN REDES SOCIALES Y COMUNIDAD
+       =================================================================== -->
+  <section class="social-hub-section" id="redes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-share-nodes"></i> Conéctate</span>
+        <h2 class="section-title">Síguenos en Redes Sociales</h2>
+        <p class="section-desc">Únete a nuestra conversación diaria en WhatsApp y no te pierdas nuestras fotos, reels y videos en tus redes favoritas.</p>
+      </div>
+
+      <div class="social-cards-grid">
+        <!-- WhatsApp Card -->
+        <a href="#" class="social-card whatsapp whatsapp-link" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h4>WhatsApp</h4>
+          <span>Grupo Activo y Avisos</span>
+        </a>
+
+        <!-- Instagram Card -->
+        <a href="#" class="social-card instagram social-instagram" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+          <h4>Instagram</h4>
+          <span>Fotos y Reels diarios</span>
+        </a>
+
+        <!-- Facebook Card -->
+        <a href="#" class="social-card facebook social-facebook" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook-f"></i>
+          <h4>Facebook</h4>
+          <span>Comunidad y Álbumes</span>
+        </a>
+
+        <!-- TikTok Card -->
+        <a href="#" class="social-card tiktok social-tiktok" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-tiktok"></i>
+          <h4>TikTok</h4>
+          <span>Videos de Rutas Cortas</span>
+        </a>
+
+        <!-- YouTube Card -->
+        <a href="#" class="social-card youtube social-youtube" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-youtube"></i>
+          <h4>YouTube</h4>
+          <span>Videos completos y Drones</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PIE DE PÁGINA (FOOTER)
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna 1: Marca -->
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="assets/logo.png" alt="Logo Footer" class="footer-logo">
+            <div>
+              <h3 class="brand-name" style="font-size: 1.2rem;">Senderismo 10K+</h3>
+              <span style="color: var(--primary); font-size: 0.85rem;">Morán - Lara</span>
+            </div>
+          </div>
+          <p class="footer-desc group-slogan">Superando los 10K en Morán, Lara y más allá. Compañerismo, salud y naturaleza.</p>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proximas">Próximas Salidas</a></li>
+            <li><a href="#galeria">Fotos y Videos</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#redes">Redes Sociales</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto y WhatsApp -->
+        <div class="footer-col">
+          <h4>Contacto Oficial</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 14px;">
+            <i class="fa-solid fa-location-dot" style="color: var(--primary); margin-right: 6px;"></i> Municipio Morán, Estado Lara, Venezuela.
+          </p>
+          <a href="#" class="btn btn-whatsapp whatsapp-link" style="width: 100%; font-size: 0.9rem;">
+            <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Senderismo 10K+ Morán - Lara. Sitio web listo para alojar gratis en GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       BOTÓN FLOTANTE DE WHATSAPP (SIEMPRE VISIBLE)
+       =================================================================== -->
+  <div class="floating-whatsapp">
+    <span class="floating-whatsapp-tooltip">¡Escríbenos a WhatsApp!</span>
+    <a href="#" id="floating-whatsapp-btn" class="floating-whatsapp-btn whatsapp-link" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- ===================================================================
+       MODAL LIGHTBOX MULTIMEDIA (FOTOS Y VIDEOS)
+       =================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Cerrar">&times;</button>
+      
+      <div class="lightbox-media-container" id="lightbox-media">
+        <!-- Se inserta la imagen o el reproductor de video de YouTube dinámicamente -->
+      </div>
+
+      <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Siguiente">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="lightbox-details">
+        <h3 id="lightbox-title">Título de la Ruta</h3>
+        <div class="lightbox-meta-row" id="lightbox-meta"></div>
+        <p class="lightbox-desc" id="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL ASISTENTE: AGREGAR NUEVA PUBLICACIÓN / RUTA
+       =================================================================== -->
+  <div class="admin-modal" id="creator-modal" role="dialog" aria-modal="true">
+    <div class="admin-dialog">
+      <button class="lightbox-close-btn" id="creator-close" aria-label="Cerrar">&times;</button>
+      
+      <div style="margin-bottom: 20px;">
+        <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Asistente de Publicaciones</span>
+        <h2 style="font-size: 1.6rem; margin-top: 6px;">Agregar Nueva Foto, Video o Ruta</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Llena los datos para previsualizar en vivo o copiar el código para guardarlo en tu archivo <code>content.js</code>.</p>
+      </div>
+
+      <form id="creator-form">
+        <div class="admin-form-group">
+          <label for="new-title">Título de la Ruta o Publicación:</label>
+          <input type="text" id="new-title" class="admin-form-control" placeholder="Ej: Ascenso a Cascada El Vino 12K" required>
+        </div>
+
+        <div class="admin-row-2">
+          <div class="admin-form-group">
+            <label for="new-category">Categoría:</label>
+            <select id="new-category" class="admin-form-control">
+              <option value="rutas">Ruta de Senderismo</option>
+              <option value="fotos">Álbum de Fotos</option>
+              <option value="videos">Video / Reel</option>
+            </select>
+          </div>
+
+          <div class="admin-form-group">
+            <label for="new-type">Tipo de Contenido:</label>
+            <select id="new-type" class="admin-form-control">
+              <option value="image">Foto(s)</option>
+              <option value="video">Video (YouTube o MP4)</option>
+              <option value="upcoming">Próxima Salida Oficial</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="admin-row-2">
+          <div class="admin-form-group">
+            <label for="new-date">Fecha:</label>
+            <input type="text" id="new-date" class="admin-form-control" placeholder="Ej: 15 de Octubre, 2026">
+          </div>
+
+          <div class="admin-form-group">
+            <label for="new-location">Ubicación en Morán / Lara:</label>
+            <input type="text" id="new-location" class="admin-form-control" placeholder="Ej: Humocaro Alto, Morán">
+          </div>
+        </div>
+
+        <div class="admin-row-2">
+          <div class="admin-form-group">
+            <label for="new-distance">Distancia:</label>
+            <input type="text" id="new-distance" class="admin-form-control" placeholder="Ej: 12.5 km (o 10K+)">
+          </div>
+
+          <div class="admin-form-group">
+            <label for="new-elevation">Desnivel / Altura:</label>
+            <input type="text" id="new-elevation" class="admin-form-control" placeholder="Ej: +650 m">
+          </div>
+        </div>
+
+        <div class="admin-row-2">
+          <div class="admin-form-group">
+            <label for="new-difficulty">Dificultad:</label>
+            <select id="new-difficulty" class="admin-form-control">
+              <option value="Moderada">Moderada</option>
+              <option value="Moderada-Alta">Moderada-Alta</option>
+              <option value="Difícil (10K+)">Difícil (10K+)</option>
+              <option value="Fácil">Fácil</option>
+            </select>
+          </div>
+
+          <div class="admin-form-group">
+            <label for="new-video">Enlace o ID de YouTube (Opcional si es video):</label>
+            <input type="text" id="new-video" class="admin-form-control" placeholder="Ej: https://youtube.com/watch?v=...">
+          </div>
+        </div>
+
+        <div class="admin-form-group">
+          <label for="new-image">Enlace o Ruta de la Foto de Portada:</label>
+          <input type="text" id="new-image" class="admin-form-control" placeholder="Ej: assets/images/mifoto.jpg o URL web">
+        </div>
+
+        <div class="admin-form-group">
+          <label for="new-desc">Descripción de la Experiencia:</label>
+          <textarea id="new-desc" rows="3" class="admin-form-control" placeholder="Escribe detalles del recorrido, anécdotas o consejos..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap;">
+          <button type="button" id="preview-post-btn" class="btn btn-primary">
+            <i class="fa-solid fa-eye"></i> Previsualizar en la Página Ahora
+          </button>
+          <button type="button" id="copy-code-btn" class="btn btn-outline">
+            <i class="fa-solid fa-copy"></i> Copiar Código para content.js
+          </button>
+        </div>
+
+        <div style="margin-top: 15px;">
+          <label style="font-size: 0.85rem; color: var(--text-muted);">Código generado listo para tu archivo:</label>
+          <div class="code-output-box" id="code-output">// Escribe en el formulario y aquí aparecerá el código generado listo para pegar.</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts: Configuración, Contenido y Lógica -->
+  <script src="config.js"></script>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+    // Actualizar año actual en el copyright
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
