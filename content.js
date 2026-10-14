@@ -143,5 +143,6 @@ const HIKING_POSTS = [
       "asset/limoncito-3.jpg",
       "asset/limoncito-4.jpg"
     ],
-    featured: true
+     featured: true
   }
+];
