@@ -17,15 +17,15 @@
 const HIKING_POSTS = [
   {
     id: 1,
-    title: "Travesía Humocaro Alto - Cueva de los Guácharos",
+    title: "Viaje La Represa - El Limocito - Sarmiento- Los Cocos",
     category: "rutas",       // Opciones: "rutas", "fotos", "videos"
     type: "image",           // "image", "video", "upcoming"
-    date: "18 de Agosto, 2026",
-    location: "Humocaro Alto, Municipio Morán",
-    distance: "14.2 km",
-    elevation: "+780 m",
+    date: "31 de Octubre, 2026",
+    location: "La Represa, Municipio Morán",
+    distance: "38.2 km",
+    elevation: "+1500 m",
     difficulty: "Moderada-Alta", // Fácil, Moderada, Difícil, Extrema
-    description: "Impresionante jornada de senderismo partiendo desde las faldas de Humocaro Alto. El equipo avanzó con ritmo firme a través del bosque nublado, cruzando riachuelos de aguas cristalinas hasta llegar a la emblemática cueva. ¡Excelente energía y compañerismo en cada kilómetro!",
+    description: "Impresionante jornada de senderismo partiendo desde las faldas de la Entrada de la Represa vía Humocaro Bajo. El viaje comenzará una subida por la Zona Árida a 704 msnm,  hasta los  1630 msnm. ¡Excelente energía y compañerismo en cada kilómetro!",
     coverImage: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1200&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1200&q=80",
@@ -36,15 +36,15 @@ const HIKING_POSTS = [
   },
   {
     id: 2,
-    title: "Ruta Hacia la Cascada El Arzobispo y Miradores",
+    title: "Ruta Hacia la Cascada De Sarmiento",
     category: "videos",
     type: "video",
-    date: "04 de Julio, 2026",
+    date: "11 de octubre, 2026",
     location: "El Tocuyo - Humocaro, Morán",
-    distance: "11.8 km",
-    elevation: "+540 m",
+    distance: "32.8 km",
+    elevation: "+1400 m",
     difficulty: "Moderada",
-    description: "Resumen en video de nuestro ascenso por los miradores de Morán y llegada a los pozos naturales de la Cascada El Arzobispo. El agua refrescante fue la mejor recompensa tras 11 kilómetros de exigente caminata bajo el cielo larense.",
+    description: "Resumen en video de nuestro ascenso por los miradores de Morán y llegada a los pozos naturales de la Cascada de Sarmiento. El agua refrescante fue la mejor recompensa tras 16 kilómetros de exigente caminata bajo el cielo larense.",
     coverImage: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
     // Puedes colocar un enlace de video de YouTube (ID o URL completa)
     // Ejemplo de YouTube ID: "dQw4w9WgXcQ" o URL completa
