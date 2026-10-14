@@ -16,7 +16,7 @@ const HIKING_POSTS = [
     elevation: "+1500 m",
     difficulty: "Moderada-Alta",
     description: "Impresionante jornada de senderismo partiendo desde las faldas de la Entrada de la Represa vía Humocaro Bajo. El viaje comenzará una subida por la Zona Árida a 704 msnm, hasta los 1630 msnm. ¡Excelente energía y compañerismo en cada kilómetro!",
-    coverImage: "asset/limoncito-2.jpg",
+    coverImage: "assets/images/limoncito.jpg",
     gallery: [
       "assets/images/limoncito.jpg",
       "assets/images/limoncito2.jpg",
@@ -111,7 +111,7 @@ const HIKING_POSTS = [
     elevation: "+1650 m",
     difficulty: "Alta (30K+)",
     description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la Ruta La Represa El Limoncito, famosa por su agricultura y hermosos paisajes, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
-    coverImage: "asset/limoncito-1.jpg",
+    coverImage: "assets/images/limoncito.jpg",
     requirements: [
       "Llevar mínimo 3 litros de agua",
       "Calzado con suela antiresbalante",
