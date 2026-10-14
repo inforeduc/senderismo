@@ -2,36 +2,26 @@
  * ===================================================================
  * CONTENIDO Y PUBLICACIONES - SENDERISMO 10K+ MORÁN - LARA
  * ===================================================================
- * 
- * ¡Aquí es donde agregas tus fotos, videos y rutas!
- * Cada publicación es un bloque entre llaves { ... }.
- * 
- * TIPOS DE PUBLICACIÓN (campo "type"):
- * - "image"   : Para una foto individual o álbum de fotos
- * - "video"   : Para videos de YouTube o videos locales en MP4
- * - "upcoming": Para anunciar una próxima caminata programada
- * 
- * Puedes copiar un bloque existente, cambiarle los datos y listo.
  */
 
 const HIKING_POSTS = [
   {
     id: 1,
     title: "Caminata La Represa - El Limocito - Sarmiento- Los Cocos",
-    category: "rutas",       // Opciones: "rutas", "fotos", "videos"
-    type: "image",           // "image", "video", "upcoming"
+    category: "rutas",
+    type: "image",
     date: "31 de Octubre, 2026",
     location: "La Represa, Municipio Morán",
     distance: "38.2 km",
     elevation: "+1500 m",
-    difficulty: "Moderada-Alta", // Fácil, Moderada, Difícil, Extrema
-    description: "Impresionante jornada de senderismo partiendo desde las faldas de la Entrada de la Represa vía Humocaro Bajo. El viaje comenzará una subida por la Zona Árida a 704 msnm,  hasta los  1630 msnm. ¡Excelente energía y compañerismo en cada kilómetro!",
-    coverImage: "asset/limoncito-1.jpg",
+    difficulty: "Moderada-Alta",
+    description: "Impresionante jornada de senderismo partiendo desde las faldas de la Entrada de la Represa vía Humocaro Bajo. El viaje comenzará una subida por la Zona Árida a 704 msnm, hasta los 1630 msnm. ¡Excelente energía y compañerismo en cada kilómetro!",
+    coverImage: "asset/limoncito-2.jpg",
     gallery: [
-  "asset/limoncito-1.jpg",
-  "asset/limoncito-2.jpg",
-  "asset/limoncito-3.jpg",
-  "asset/limoncito-4.jpg"
+      "asset/limoncito-1.jpg",
+      "asset/limoncito-2.jpg",
+      "asset/limoncito-3.jpg",
+      "asset/limoncito-4.jpg"
     ],
     featured: true
   },
@@ -47,10 +37,8 @@ const HIKING_POSTS = [
     difficulty: "Moderada",
     description: "Resumen en video de nuestro ascenso por los miradores de Morán y llegada a los pozos naturales de la Cascada de Sarmiento. El agua refrescante fue la mejor recompensa tras 16 kilómetros de exigente caminata bajo el cielo larense.",
     coverImage: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
-    // Puedes colocar un enlace de video de YouTube (ID o URL completa)
-    // Ejemplo de YouTube ID: "dQw4w9WgXcQ" o URL completa
-    youtubeId: "v7UFz0qJ-q4", // Video de muestra de trekking en montaña
-    videoUrl: "", // O si tienes un archivo .mp4 local en assets/images/tu-video.mp4
+    youtubeId: "v7UFz0qJ-q4",
+    videoUrl: "",
     gallery: [
       "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80"
     ],
@@ -105,14 +93,14 @@ const HIKING_POSTS = [
     difficulty: "Moderada",
     description: "Subida vespertina para capturar la puesta de sol sobre el valle del Río Tocuyo. ¡La vista dorada desde lo alto no tiene precio!",
     coverImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-    youtubeId: "5O36_60979g", // Trekking drone video
+    youtubeId: "5O36_60979g",
     videoUrl: "",
     gallery: [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
     ],
     featured: false
   },
-    {
+  {
     id: 6,
     title: "PRÓXIMA SALIDA: Caminata La Represa - El Limocito - Sarmiento- Los Cocos",
     category: "rutas",
@@ -123,10 +111,7 @@ const HIKING_POSTS = [
     elevation: "+1650 m",
     difficulty: "Alta (30K+)",
     description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la Ruta La Represa El Limoncito, famosa por su agricultura y hermosos paisajes, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
-    
-    // 👇 AQUÍ ES DONDE CAMBIAS LA FOTO DE LOS PINOS POR LA TUYA:
     coverImage: "asset/limoncito-1.jpg",
-    
     requirements: [
       "Llevar mínimo 3 litros de agua",
       "Calzado con suela antiresbalante",
@@ -135,14 +120,12 @@ const HIKING_POSTS = [
       "Confirmar asistencia en el grupo de WhatsApp"
     ],
     whatsappCta: "Inscribirme por WhatsApp",
-    
-    // 👇 Y AQUÍ COLOCAS LAS 4 FOTOS:
     gallery: [
       "asset/limoncito-1.jpg",
       "asset/limoncito-2.jpg",
       "asset/limoncito-3.jpg",
       "asset/limoncito-4.jpg"
     ],
-     featured: true
+    featured: true
   }
 ];
