@@ -121,7 +121,7 @@ const HIKING_POSTS = [
     distance: "38.0 km",
     elevation: "+1650 m",
     difficulty: "Alta (30K+)",
-    description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la Ruta La Rep0resa El Limoncito, famosa por su agricultura y hermosos p0aisajes, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
+    description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la Ruta La Represa El Limoncito, famosa por su agricultura y hermosos paisajes, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
     coverImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
     requirements: [
       "Llevar mínimo 3 litros de agua",
