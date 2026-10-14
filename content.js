@@ -121,10 +121,10 @@ const HIKING_POSTS = [
     ],
     whatsappCta: "Inscribirme por WhatsApp",
     gallery: [
-      "asset/limoncito-1.jpg",
-      "asset/limoncito-2.jpg",
-      "asset/limoncito-3.jpg",
-      "asset/limoncito-4.jpg"
+      "assets/limoncito.jpg",
+      "assets/limoncito2.jpg",
+      "assets/limoncito3.jpg",
+      "assets/limoncito4.jpg"
     ],
     featured: true
   }
