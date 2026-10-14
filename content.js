@@ -112,7 +112,7 @@ const HIKING_POSTS = [
     ],
     featured: false
   },
-  {
+    {
     id: 6,
     title: "PRÓXIMA SALIDA: Caminata La Represa - El Limocito - Sarmiento- Los Cocos",
     category: "rutas",
@@ -123,7 +123,10 @@ const HIKING_POSTS = [
     elevation: "+1650 m",
     difficulty: "Alta (30K+)",
     description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la Ruta La Represa El Limoncito, famosa por su agricultura y hermosos paisajes, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
-    coverImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+    
+    // 👇 AQUÍ ES DONDE CAMBIAS LA FOTO DE LOS PINOS POR LA TUYA:
+    coverImage: "asset/limoncito-1.jpg",
+    
     requirements: [
       "Llevar mínimo 3 litros de agua",
       "Calzado con suela antiresbalante",
@@ -132,9 +135,13 @@ const HIKING_POSTS = [
       "Confirmar asistencia en el grupo de WhatsApp"
     ],
     whatsappCta: "Inscribirme por WhatsApp",
+    
+    // 👇 Y AQUÍ COLOCAS LAS 4 FOTOS:
     gallery: [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+      "asset/limoncito-1.jpg",
+      "asset/limoncito-2.jpg",
+      "asset/limoncito-3.jpg",
+      "asset/limoncito-4.jpg"
     ],
     featured: true
   }
-];
