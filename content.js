@@ -17,7 +17,7 @@
 const HIKING_POSTS = [
   {
     id: 1,
-    title: "Viaje La Represa - El Limocito - Sarmiento- Los Cocos",
+    title: "Caminata La Represa - El Limocito - Sarmiento- Los Cocos",
     category: "rutas",       // Opciones: "rutas", "fotos", "videos"
     type: "image",           // "image", "video", "upcoming"
     date: "31 de Octubre, 2026",
@@ -113,15 +113,15 @@ const HIKING_POSTS = [
   },
   {
     id: 6,
-    title: "PRÓXIMA SALIDA: Circuito Cascada El Vino y Páramo",
+    title: "PRÓXIMA SALIDA: Caminata La Represa - El Limocito - Sarmiento- Los Cocos",
     category: "rutas",
     type: "upcoming",
-    date: "Domingo 20 de Septiembre, 2026",
-    location: "Parque Nacional Dinira / Barbacoas",
-    distance: "15.0 km",
-    elevation: "+650 m",
-    difficulty: "Moderada (10K+)",
-    description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la icónica Cascada El Vino, famosa por sus aguas de tono vino tinto natural, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
+    date: "Domingo 31 de Octubre, 2026",
+    location: "Parque Los Dos Cerritos / Sarmiento",
+    distance: "38.0 km",
+    elevation: "+1650 m",
+    difficulty: "Alta (30K+)",
+    description: "¡Prepárate para nuestra próxima gran aventura! Visitaremos la Ruta La Rep0resa El Limoncito, famosa por su agricultura y hermosos p0aisajes, con posterior circuito de montaña. Punto de encuentro: Plaza Bolívar de El Tocuyo a las 6:00 AM.",
     coverImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
     requirements: [
       "Llevar mínimo 3 litros de agua",
