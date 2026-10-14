@@ -18,10 +18,10 @@ const HIKING_POSTS = [
     description: "Impresionante jornada de senderismo partiendo desde las faldas de la Entrada de la Represa vía Humocaro Bajo. El viaje comenzará una subida por la Zona Árida a 704 msnm, hasta los 1630 msnm. ¡Excelente energía y compañerismo en cada kilómetro!",
     coverImage: "asset/limoncito-2.jpg",
     gallery: [
-      "assets/limoncito.jpg",
-      "assets/limoncito2.jpg",
-      "assets/limoncito3.jpg",
-      "assets/limoncito4.jpg"
+      "assets/images/limoncito.jpg",
+      "assets/images/limoncito2.jpg",
+      "assets/images/limoncito3.jpg",
+      "assets/images/limoncito4.jpg"
     ],
     featured: true
   },
@@ -121,10 +121,10 @@ const HIKING_POSTS = [
     ],
     whatsappCta: "Inscribirme por WhatsApp",
     gallery: [
-      "assets/limoncito.jpg",
-      "assets/limoncito2.jpg",
-      "assets/limoncito3.jpg",
-      "assets/limoncito4.jpg"
+      "assets/images/limoncito.jpg",
+      "assets/images/limoncito2.jpg",
+      "assets/images/limoncito3.jpg",
+      "assets/images/limoncito4.jpg"
     ],
     featured: true
   }
