@@ -19,12 +19,8 @@ const SITE_CONFIG = {
   // WHATSAPP (Enlace de invitación directa al grupo o al administrador)
   // ---------------------------------------------------------------
   whatsapp: {
-    // Si tienes un enlace de invitación a tu grupo de WhatsApp, ponlo aquí:
-    // (En WhatsApp: Entra al grupo -> Toca el nombre del grupo -> "Enlace de invitación")
-    groupInviteUrl: "https://chat.whatsapp.com/EjemploDeEnlaceWhatsApp",
-
     // Número de teléfono del administrador (con código de país, ej: 58 para Venezuela)
-    adminPhone: "584120000000",
+    adminPhone: "584263230321",
 
     // Mensaje automático al hacer clic en el botón de WhatsApp
     welcomeMessage: "¡Hola! Vi la página web de Senderismo 10K+ Morán y me gustaría unirme a las próximas caminatas y excursiones."
